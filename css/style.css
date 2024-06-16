@@ -1,0 +1,53 @@
+html {
+    font-size: 62.5%;
+}
+
+/* variables */
+
+:root {                                                         /* targets the highest level parent element, used for defining global CSS variables*/
+--primary-color: #f4f6fc;
+--secondary-color: #303030;
+--tertiary-color: #ffffff;
+--quaternary-color:  #990066;
+--body-bg-color: #e8ecf3;
+}
+
+* {                                                             /* universal selector in the CSS, targets all elements on the page*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.container {                                                    
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}          
+
+.title {
+    font-size: 38px;
+    font-weight: 300;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(204, 204, 35), orange, red);           /* applies a linear gradient background to the text*/
+    color: transparent;
+    background-clip: text;                                      /* the background gradient will only be visible where the text is*/
+    -webkit-background-clip: text;                              /* ensures compatibility with webkit browsers*/
+    -webkit-text-fill-color: transparent;                       /* allow the bg gradient to be visible through the text*/
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+                                                        
