@@ -23,9 +23,13 @@ body {
     background-color: var(--body-bg-color);
 }
 
-.container {                                                    
+div {
     width: 100%;
-    max-width: 1000px;
+}
+
+.wrapper {                                                    
+    width: 100%;
+    max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 20px;
@@ -45,9 +49,42 @@ body {
     -webkit-text-fill-color: transparent;                       /* allow the bg gradient to be visible through the text*/
 }
 
-.description {
+.sub-heading {
     font-size: 16px;
     font-weight: 300;
+    color: var(--quaternary-color);
 }
 
-                                                        
+.search {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.search .code {
+    position: relative;
+}
+
+input[type="text"] {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    border: 2px;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.search .code .search-color {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+}
